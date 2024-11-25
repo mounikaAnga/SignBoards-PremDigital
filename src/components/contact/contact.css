@@ -1,0 +1,44 @@
+.contact form div {
+  display: flex;
+}
+.contact textarea {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.contact input {
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+.contact form {
+  padding: 30px;
+}
+.address{
+  margin-top:20px;
+  margin-bottom: 20px;
+}
+.container h3{
+  margin-top:30px;
+  margin-bottom:10px;
+  
+}
+.container a{
+  color:blue;
+  margin-top:30px;
+margin-bottom:30px;}
+.container a:hover{
+  color:red;
+}
+@media screen and (max-width: 768px) {
+  .contact h4 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .contact form div {
+    flex-direction: column;
+  }
+  .contact input {
+    width: 100%;
+  }
+}

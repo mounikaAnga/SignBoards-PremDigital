@@ -1,0 +1,86 @@
+/* General styles */
+header {
+  background-color: #fff;
+  height: 10vh;
+  box-shadow: 0 5px 30px rgb(0 22 84 / 10%);
+  padding: 15px 0;
+  /* position: sticky; */
+  top: 0;
+  z-index: 99999;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+}
+header img {
+  width: 170px;
+  object-fit: contain;
+}
+header a {
+  margin-left: 30px;
+  transition: 0.5s;
+  font-weight: 500;
+}
+header a:hover {
+  color: blue;
+}
+header span {
+  width: auto;
+  padding: 0px 6px;
+  background: #2756ae;
+  border-radius: 50px;
+  color: #ffffff;
+  margin-right: 4px;
+  margin-top: 50px;
+  font-weight: 200;
+}
+header h4 {
+  font-weight: 500;
+  margin-right: 20px;
+}
+header .toggle {
+  display: none;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  header {
+    padding: 0;
+  }
+  header img {
+    margin-top: 0; /* Remove extra margin */
+    width: 60px; /* Adjust size if necessary */
+    height: auto; /* Maintain aspect ratio */
+  }
+  header .button {
+    color: #2756ae;
+    display: none;
+  }
+  header .nav .flex {
+    display: none;
+  }
+  header .toggle {
+    display: block;
+    margin-top: 10px;
+  }
+  header .small {
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header li a {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #2756ae;
+    text-align: center;
+  }
+  header li :hover{
+    color:red;
+  }
+}

@@ -1,0 +1,91 @@
+.container-style {
+    height: 100%;
+    position: relative;
+    width: 100%; /* Ensures the container spans the full width */
+    overflow: hidden; /* Hides any content outside the container */
+  }
+  
+  .transparent-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adds a semi-transparent overlay */
+    z-index: 1;
+  }
+  
+  .description {
+    width: 600px;
+    position: absolute;
+    z-index: 2; /* Keeps the description above the transparent background */
+    color: aliceblue;
+    top: 20%;
+    left: 20%;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); /* Adds a shadow for readability */
+  }
+  
+  .description h1 {
+    font-size: 46px;
+    margin-bottom: 10px;
+  }
+  
+  .description p {
+    font-size: 22px;
+    line-height: 1.5; /* Improves readability */
+  }
+  
+  .carousel-boullt {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2; /* Keeps bullets above the transparent background */
+  }
+  
+  .carousel-boullt span {
+    width: 20px;
+    height: 8px;
+    background-color: rgb(179, 178, 176);
+    margin: 0 5px; /* Adjust spacing between bullets */
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .carousel-boullt span:hover {
+    background-color: white; /* Changes color on hover */
+    transform: scale(1.2); /* Slightly enlarges the bullet */
+  }
+  
+  .carousel-boullt span.active-bullet {
+    background-color: white; /* Highlights the active bullet */
+    transform: scale(1.3); /* Enlarges the active bullet */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .description {
+      width: 90%; /* Adjust description width for smaller screens */
+      left: 5%;
+      top: 15%;
+    }
+  
+    .description h1 {
+      font-size: 32px; /* Adjust heading size */
+    }
+  
+    .description p {
+      font-size: 18px; /* Adjust paragraph size */
+    }
+  
+    .carousel-boullt span {
+      width: 15px; /* Adjust bullet size */
+      height: 6px;
+      margin: 0 3px;
+    }
+  }
+  

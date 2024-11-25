@@ -1,0 +1,85 @@
+.location .box {
+  position: relative;
+  border-radius: 5px;
+}
+.location img {
+  border-radius: 5px;
+  max-height: 250px;
+}
+.location .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 250px;
+  width: 100%;
+  color: #fff;
+  z-index: 222;
+}
+.location .overlay::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 340px;
+  height: 210px;
+  background: rgb(15 28 47 / 30%);
+  z-index: -1;
+  margin: 20px;
+  border-radius: 5px;
+}
+.location h5 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.location label {
+  color: #fff;
+  margin-right: 20px;
+  opacity: 0.8;
+}
+/* @media screen and (max-width: 800px) {
+  .location .overlay::after {
+    width: 280px;
+    height: 170px;
+  }
+} */
+@media screen and (max-width: 768px) {
+  .location .content {
+    grid-template-columns: 1fr; /* Single column for smaller screens */
+  }
+
+  .location .box {
+    margin: 0 auto; /* Center align single column boxes */
+  }
+
+  .location .overlay::after {
+    width: 260px;
+    height: 160px; /* Adjust overlay size */
+  }
+
+  .location h5 {
+    font-size: 16px; /* Slightly smaller text for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .location img {
+    height: auto; /* Keep images responsive for very small screens */
+  }
+
+  .location h5 {
+    font-size: 14px; /* Smaller text size */
+  }
+
+  .location label {
+    font-size: 12px; /* Adjust font size for labels */
+  }
+
+  .location .overlay::after {
+    width: 300px;
+    height: 180px; /* Minimized overlay size for compact screens */
+  }
+}
