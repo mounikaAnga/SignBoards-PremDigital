@@ -17,8 +17,8 @@ footer {
 
 footer .container {
   display: grid;
-  grid-template-columns: 6fr 2fr 2fr 1fr;
-  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
 }
 
 footer img {
@@ -34,23 +34,23 @@ footer h2 {
 footer .container p {
   color: #b0b3b8;
   margin: 20px 0 10px;
-  /* line-height: 1.2; */
   max-width: 400px;
   text-align: justify;
 }
-footer .container h4{
-  margin-bottom:50px;
+
+footer .container h4 {
+  margin-bottom: 50px;
 }
 
 footer .input {
   display: flex;
-  gap: 10px; 
+  gap: 10px;
 }
 
 footer input {
   background-color: #fff;
   padding: 15px;
-  width: 70%;
+  flex: 1;
   border: none;
   border-radius: 5px 0 0 5px;
   outline: none;
@@ -73,33 +73,34 @@ footer button:hover {
 
 footer h3 {
   font-weight: 500;
-  margin-left: 200px;
+  padding-left: 40px;
   margin-bottom: 20px;
 }
 
 footer ul {
   list-style: none;
   padding: 0;
-  margin-left: 200px;
- 
+  margin: 0;
+  padding-left: 40px;
 }
 
 footer ul li {
-  color: #b0b3b8;
+  color: #e0e0e0;
   margin-bottom: 10px;
 }
 
 .legal {
   text-align: center;
-  padding: 20px;
+  padding: 20px 10px;
+  font-size: 14px;
   background: #1d2636;
   color: rgba(255, 255, 255, 0.5);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 @media screen and (max-width: 800px) {
-  footer .container {
-    grid-template-columns: repeat(2, 1fr);
+  .footerContact h1 {
+    font-size: 32px;
   }
 }
 
@@ -110,5 +111,17 @@ footer ul li {
 
   .footerContact h1 {
     font-size: 28px;
+  }
+
+  footer input {
+    padding: 10px;
+  }
+
+  footer button {
+    padding: 10px;
+  }
+
+  .legal {
+    font-size: 12px;
   }
 }
