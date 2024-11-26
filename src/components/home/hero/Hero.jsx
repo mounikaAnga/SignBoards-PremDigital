@@ -10,25 +10,10 @@ const Hero = () => {
       <section className='hero'>
         <div className='container'>
       
-         <Heading title='Prem digital' subtitle='PREM means "love, devotion, affinity for...' /> 
+         <Heading title='Aspire Protection Services PVT.LTD.' subtitle='Your Safety, Our Priority' /> 
         
 
-          {/* <form className='flex'>
-            <div className='box'>
-              <span>City/Street</span>
-              <input type='text' placeholder='Location' />
-            </div>
-            <div className='box'>
-              <span>Price Range</span>
-              <input type='text' placeholder='Price Range' />
-            </div>
-            <div className='box'>
-              <h4>Advance Filter</h4>
-            </div>
-            <button className='btn1'>
-              <i className='fa fa-search'></i>
-            </button>
-          </form> */}
+         
         </div>
       </section>
     </>

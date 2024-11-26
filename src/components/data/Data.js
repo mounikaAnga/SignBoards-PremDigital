@@ -26,277 +26,52 @@ export const nav = [
 ]
 export const featured = [
   {
-    cover: "../images/hero/ACP.jpg",
-    name: "ACP SignBoard",
+    cover: "../images/service1.png",
+    heading: "Security Services",
+    text: "We offer a full range of security solutions, including armed and unarmed security personnel for businesses, residential areas, and events. Our team is trained to handle both routine security needs and high-risk scenarios.",
    
   },
   {
-    cover: "../images/hero/flex.jpg",
-    name: "Flex Board",
+    cover: "../images/service3.png",
+    heading: "Facilities Services",
+    text: " From janitorial services to maintenance and environmental safety, we manage the complete upkeep of your facilities, ensuring they operate smoothly and efficiently.",
   
   },
   {
-    cover: "../images/hero/3d1.jpeg",
-    name: "3d SignBoard",
-   
+    cover: "../images/service2.png",
+    heading: "Property Management",
+    text: "Aspire Security goes beyond basic security to offer property management services, handling everything from tenant management to maintenance oversight. We ensure your property remains secure, well-maintained, and fully operational.",
+  
   },
-  {
-    cover: "../images/hero/banner.jpeg",
-    name: "Banners",
-   
-  },
-  {
-    cover: "../images/hero/logo2.png",
-    name: "LogoSignBoard",
-   
-  },
-  {
-    cover: "../images/hero/glow.jpeg",
-    name: "GlowSignBoard",
-   
-  },
+ 
 ]
 export const list = [
   {
     id: 1,
-    cover: "../images/list/b4.avif",
-   
-    location: "Hyderabad",
-    category: "3D",
+    bgColor:"#FFDDC1",
+    image: "strategy/mission2.png", // Replace with your image path
+    heading: "Our Mission",
+    content: "Our mission is to provide protection and security to our clients through a bespoke service tailored to their specific needs, ultimately the safety and security of the client’s staff, premises, assets and the general public is our highest priority..",
     //price: "$3,700",
     
   },
   {
     id: 2,
-    cover: "../images/list/b11.avif",
-  
-    location: "Hyderabad",
-    category: "3D",
+    bgColor: "#C1E1FF",
+    image: "strategy/visio1.png",
+    heading: "Our Vision",
+    content: "We are committed to the ongoing improvement of the services we provide to our clients. By investing in and developing our most important assets, our staff, we aim to achieve all our goals and exceed our clients’ expectations. ",
     
    
   },
   {
     id: 3,
-    cover: "../images/list/b5.webp",
-    location: "Hyderabad",
-    category: "3D",
+    bgColor: "#D9C1FF",
+    image: "strategy/values1.png",
+    heading: "Our Values",
+    content: "As a company and as individuals we value above all else honesty, integrity, unselfishness, professionalism and mutual respect. For our staff, we offer a rewarding and challenging environment where personal development can flourish. We hold ourselves accountable to our clients, staff and partners by honoring our commitments, providing results and continually striving to provide the highest quality security services.",
    
    
-  },
-  {
-    id: 4,
-    cover: "../images/list/b6.avif",
-    location: "Hyderabad",
-    category: "3D",
-   
-    
-  },
-  {
-    id: 5,
-    cover: "../images/list/b7.avif",
-    name: "Brick Lane Realty",
-    location: "Hyderabad",
-    category: "3D",
-  
-   
-  },
-  {
-    id: 6,
-    cover: "../images/list/b8.avif",
-
-    location: "Hyderabad",
-    category: "3D",
-    // price: "$2,742",
-  
-  },
-  {
-    id: 6,
-    cover: "../images/list/b9.avif",
-
-    location: "Hyderabad",
-    category: "3D",
-    // price: "$2,742",
-  
-  },
-  {
-    id: 6,
-    cover: "../images/list/b10.avif",
-
-    location: "Hyderabad",
-    category: "3D",
-    // price: "$2,742",
-  
-  },
-  {
-    id: 6,
-    cover: "../images/list/b23.avif",
-
-    location: "Hyderabad",
-    category: "3D",
-    // price: "$2,742",
-  
-  },
-  {
-    id: 6,
-    cover: "../images/list/b14.avif",
-
-    location: "Hyderabad",
-    category: "3D",
-    // price: "$2,742",
-  
-  },
-  {
-    id: 6,
-    cover: "../images/list/b15.avif",
-
-    location: "Hyderabad",
-    category: "3D",
-    // price: "$2,742",
-  
-  },
-  {
-    id: 6,
-    cover: "../images/list/b13.avif",
-
-    location: "Hyderabad",
-    category: "3D",
-    // price: "$2,742",
-  
-  },
-  {
-    id: 6,
-    cover: "../images/list/b16.avif",
-
-    location: "Hyderabad",
-    category: "3D",
-    // price: "$2,742",
-  
-  },
-  {
-    id: 6,
-    cover: "../images/list/b17.avif",
-
-    location: "Hyderabad",
-    category: "3D",
-    // price: "$2,742",
-  
-  },
-  {
-    id: 6,
-    cover: "../images/list/b18.avif",
-
-    location: "Hyderabad",
-    category: "3D",
-    // price: "$2,742",
-  
-  },
-  {
-    id: 6,
-    cover: "../images/list/b19.webp",
-
-    location: "Hyderabad",
-    category: "3D",
-    // price: "$2,742",
-  
-  },
-  {
-    id: 6,
-    cover: "../images/list/board3.avif",
-
-    location: "Hyderabad",
-    category: "3D",
-    // price: "$2,742",
-  
-  },
-  {
-    id: 6,
-    cover: "../images/list/b24.jpg",
-
-    location: "Hyderabad",
-    category: "3D",
-    // price: "$2,742",
-  
-  },
-  {
-    id: 6,
-    cover: "../images/list/b25.avif",
-
-    location: "Hyderabad",
-    category: "3D",
-    // price: "$2,742",
-  
-  },
-  {
-    id: 6,
-    cover: "../images/list/b27.avif",
-
-    location: "Hyderabad",
-    category: "3D",
-    // price: "$2,742",
-  
-  },
-  {
-    id: 6,
-    cover: "../images/list/b29.webp",
-
-    location: "Hyderabad",
-    category: "3D",
-    // price: "$2,742",
-  
-  },
-  {
-    id: 6,
-    cover: "../images/list/b30.avif",
-
-    location: "Hyderabad",
-    category: "3D",
-    // price: "$2,742",
-  
-  },
-  {
-    id: 6,
-    cover: "../images/list/b31.avif",
-
-    location: "Hyderabad",
-    category: "3D",
-    // price: "$2,742",
-  
-  },
-  {
-    id: 6,
-    cover: "../images/list/b32.webp",
-
-    location: "Hyderabad",
-    category: "3D",
-    // price: "$2,742",
-  
-  },
-  {
-    id: 6,
-    cover: "../images/list/b33.avif",
-
-    location: "Hyderabad",
-    category: "3D",
-    // price: "$2,742",
-  
-  },
-  {
-    id: 6,
-    cover: "../images/list/b26.avif",
-
-    location: "Hyderabad",
-    category: "3D",
-    // price: "$2,742",
-  
-  },
-  {
-    id: 6,
-    cover: "../images/list/b28.avif",
-
-    location: "Hyderabad",
-    category: "3D",
-    // price: "$2,742",
-  
   },
 ]
 export const awards = [
@@ -417,80 +192,171 @@ export const team = [
 ]
 export const price = [
   {
-    plan: "Basic",
-    price: "29",
-    ptext: "per user, per month",
+    plan: "Our Core Competencies",
     list: [
       {
         icon: <i class='fa-solid fa-check'></i>,
-        text: "99.5% Uptime Guarantee",
+        text: "Manned Guarding",
       },
       {
         icon: <i class='fa-solid fa-check'></i>,
-        text: "120GB CDN Bandwidth",
+        text: "Security Systems",
       },
       {
         icon: <i class='fa-solid fa-check'></i>,
-        text: "5GB Cloud Storage",
+        text: "House Keeping",
       },
-      { change: "color", icon: <i class='fa-solid fa-x'></i>, text: "Personal Help Support" },
-      { change: "color", icon: <i class='fa-solid fa-x'></i>, text: "Enterprise SLA" },
+      {
+        icon: <i class='fa-solid fa-check'></i>,
+        text: "Property Management",
+      },
+      {
+        icon: <i class='fa-solid fa-check'></i>,
+        text: "Pantry Services",
+      },
+      {
+        icon: <i class='fa-solid fa-check'></i>,
+        text: "Product Procurement",
+      },
+      {
+        icon: <i class='fa-solid fa-check'></i>,
+        text: "Pest Control",
+      },
+      {
+        icon: <i class='fa-solid fa-check'></i>,
+        text: "Gardening ",
+      },
+      {
+        icon: <i class='fa-solid fa-check'></i>,
+        text: "Backend Operations",
+      },
+      {
+        icon: <i class='fa-solid fa-check'></i>,
+        text: "Front Desk Operations",
+      },
+      {
+        icon: <i class='fa-solid fa-check'></i>,
+        text: "Data Entry",
+      },
+      {
+        icon: <i class='fa-solid fa-check'></i>,
+        text: "Valet Services",
+      },
+    
+
     ],
   },
   {
-    best: "Best Value",
-    plan: "Standard",
-    price: "49",
-    ptext: "per user, per month",
+    plan: "Sectors We Serve",
+ 
     list: [
       {
         icon: <i class='fa-solid fa-check'></i>,
-        text: "99.5% Uptime Guarantee",
+        text: "Gated Communities",
       },
       {
         icon: <i class='fa-solid fa-check'></i>,
-        text: "150GB CDN Bandwidth",
+        text: "Automobile Industry",
       },
       {
         icon: <i class='fa-solid fa-check'></i>,
-        text: "10GB Cloud Storage",
+        text: "Retail Sector",
       },
       {
         icon: <i class='fa-solid fa-check'></i>,
-        text: "Personal Help Support",
+        text: "Software/Technology",
       },
       {
-        change: "color",
-        icon: <i class='fa-solid fa-x'></i>,
-        text: "Enterprise SLA",
+        icon: <i class='fa-solid fa-check'></i>,
+        text: "Educational Institutions",
       },
+      {
+        icon: <i class='fa-solid fa-check'></i>,
+        text: "Hospital & Health Care",
+      },
+      {
+        icon: <i class='fa-solid fa-check'></i>,
+        text: "Banking&financial institution",
+      },
+      {
+        icon: <i class='fa-solid fa-check'></i>,
+        text: "Research  and Development Organizations",
+      },
+      {
+        icon: <i class='fa-solid fa-check'></i>,
+        text: "Laboratories",
+      },
+      {
+        icon: <i class='fa-solid fa-check'></i>,
+        text: "Showrooms",
+      },
+      {
+        icon: <i class='fa-solid fa-check'></i>,
+        text: "Service Centers and Malls",
+      },
+      {
+        icon: <i class='fa-solid fa-check'></i>,
+        text: "Malls",
+      },
+    
+     
     ],
   },
   {
-    plan: "Platinum",
-    price: "79",
-    ptext: "2 user, per month",
+    plan: "Manpower Categories",
     list: [
       {
         icon: <i class='fa-solid fa-check'></i>,
-        text: "100% Uptime Guarantee",
+        text: "Facility and Security Manager",
       },
       {
         icon: <i class='fa-solid fa-check'></i>,
-        text: "200GB CDN Bandwidth",
+        text: "Security Officer",
       },
       {
         icon: <i class='fa-solid fa-check'></i>,
-        text: "20GB Cloud Storage",
+        text: "Assistant Security Officer",
       },
       {
         icon: <i class='fa-solid fa-check'></i>,
-        text: "Personal Help Support",
+        text: "Security Guards",
       },
       {
         icon: <i class='fa-solid fa-check'></i>,
-        text: "Enterprise SLA",
+        text: "House Keeping Supervisor",
       },
+      {
+        icon: <i class='fa-solid fa-check'></i>,
+        text: "Security Lady Guards",
+      },
+      {
+        icon: <i class='fa-solid fa-check'></i>,
+        text: "Security Escort Guards",
+      },
+      {
+        icon: <i class='fa-solid fa-check'></i>,
+        text: "Receptionists / Front Office Assistants",
+      },
+      {
+        icon: <i class='fa-solid fa-check'></i>,
+        text: "Electricians & Mechanics",
+      },
+      {
+        icon: <i class='fa-solid fa-check'></i>,
+        text: "Plumbers & Carpenters",
+      },
+      {
+        icon: <i class='fa-solid fa-check'></i>,
+        text: "House Keeping Staff",
+      },
+      {
+        icon: <i class='fa-solid fa-check'></i>,
+        text: "Gardeners & Carpenters & Delivary Boys",
+      },
+      // {
+      //   icon: <i class='fa-solid fa-check'></i>,
+      //   text: "Delivery boys",
+      // },
     ],
   },
 ]

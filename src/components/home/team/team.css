@@ -1,72 +1,128 @@
-.team .box {
-  background: #ffffff;
-  border-radius: 6px;
-  border: 1px solid rgb(62 28 131 / 10%);
-  padding: 2rem;
-  transition: 0.5s;
+.why-us-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 50px;  /* Adjust top margin if needed */
+  margin-left: 10%;
+  margin-right: 10%;
 }
-.team .box:hover {
-  box-shadow: 0 0 20px 0 rgb(112 121 138 / 18%);
-  cursor: pointer;
+
+.why-us-content {
+  width: 250%;  /* Adjust width for left content */
+  /* Add padding to create space between text and circles */
 }
-.team .details {
-  text-align: center;
-  margin-top: 30px;
-}
-.team .img {
-  width: 90px;
-  height: 90px;
-  margin: auto;
-  position: relative;
-}
-.team img {
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-}
-.team .img i {
-  color: #108be7;
-  font-size: 17px;
-  position: absolute;
-  top: 35px;
-  right: -10px;
-}
-.team .img::after {
-  content: "";
-  position: absolute;
-  top: -15px;
-  left: -15px;
-  width: 110px;
-  height: 110px;
-  border: 5px solid #edf0f5;
-  border-radius: 50%;
-}
-.team label {
-  display: inline-block;
-  margin-top: 20px;
-}
-.team i {
-  color: grey;
-  margin-right: 5px;
-}
-.team ul {
-  display: inline-block;
-  margin-top: 10px;
-}
-.team ul li {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
+.why-us-container {
+  display: flex;
+  margin-bottom: 300px;
+  margin-left: 30%;
+  justify-content: center;
   align-items: center;
-  background-color: #f4f5f7;
+  flex-direction: column;
+  position: relative;
+  height: 400px; /* Adjust as needed */
+  width: 100%;
+}
+.why-us-content h1{
+  font-size: 40px;
+  
+  font-weight:bolder;
+ 
+  color:#d41e1e;
+  margin-bottom:40px;
+
+}
+
+.why-us-content ul {
+  list-style-type: none;
+  font-size: large;
+  color: #222;
+  padding: 0;
+}
+
+.why-us-content li {
+  margin-bottom: 15px;
+}
+
+
+
+.circle-container {
+  position: relative;
+  top:30%;
+  width: 400px; /* Width and height for the circular container */
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-text {
+  position: absolute;
+  z-index: 10;
+}
+
+.center-text h1 {
+  font-size: 36px;
+  color: #222;
+  font-weight: 700;
+  margin: 0;
+}
+
+.circle {
+  position: absolute;
+  width: 140px; /* Adjust circle size */
+  height: 140px; /* Adjust circle size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
-  margin: 5px;
-}
-.team .button {
-  margin-top: 20px;
-}
-.team .button i {
+  background-color: #27aea9;
   color: white;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Using CSS transform and rotate to position circles in a circular layout */
+.circle:nth-child(1) {
+  transform: rotate(0deg) translate(140px) rotate(0deg);
+}
+
+.circle:nth-child(2) {
+  transform: rotate(60deg) translate(140px) rotate(-60deg);
+}
+
+.circle:nth-child(3) {
+  transform: rotate(120deg) translate(140px) rotate(-120deg);
+}
+
+.circle:nth-child(4) {
+  transform: rotate(180deg) translate(140px) rotate(-180deg);
+}
+
+.circle:nth-child(5) {
+  transform: rotate(240deg) translate(140px) rotate(-240deg);
+}
+
+.circle:nth-child(6) {
+  transform: rotate(300deg) translate(140px) rotate(-300deg);
+}
+.circle:nth-child(7) {
+  transform: rotate(360deg) translate(140px) rotate(-360deg);
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .why-us-container {
+    height: auto;
+  }
+
+  .circle-container {
+    width: 150px;
+    height: 150px;
+  }
+
+  .circle {
+    width: 100px;
+    height: 100px;
+  }
 }

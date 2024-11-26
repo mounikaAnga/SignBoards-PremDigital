@@ -1,37 +1,41 @@
-/* General styles */
 header {
   background-color: #fff;
-  height: 10vh;
+  height: 15vh;
   box-shadow: 0 5px 30px rgb(0 22 84 / 10%);
-  padding: 15px 0;
+  padding: 25px 0;
   /* position: sticky; */
   top: 0;
   z-index: 99999;
 }
-.logo {
-  width: 50px;
-  height: 50px;
+head .li{
+  color:black !important;
+}
+.logo1 {
+  
+  width: 95px;
+  height: 78px;
 }
 header img {
   width: 170px;
   object-fit: contain;
 }
 header a {
+  color:#d41e1e !important;
   margin-left: 30px;
   transition: 0.5s;
   font-weight: 500;
 }
 header a:hover {
-  color: blue;
+  color: black !important;
 }
 header span {
   width: auto;
-  padding: 0px 6px;
-  background: #2756ae;
+  padding: 0px 8px;
+  background: #d41e1e;
   border-radius: 50px;
   color: #ffffff;
   margin-right: 4px;
-  margin-top: 50px;
+  margin-top: 80px;
   font-weight: 200;
 }
 header h4 {

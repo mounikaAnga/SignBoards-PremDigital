@@ -1,127 +1,108 @@
-.footerContact {
-  background-color: #2756ae;
-  padding: 40px 0;
-  color: #fff;
-}
-
-.footerContact h1 {
-  font-size: 40px;
-  margin: 0 0 10px;
-}
-
-footer {
-  background-color: #1d2636;
-  padding: 50px 0;
-  color: #fff;
-}
-
-footer .container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-}
-
-footer img {
-  height: 50px;
-  width: 100px;
-}
-
-footer h2 {
-  font-weight: 400;
-  margin-top: 20px;
-}
-
-footer .container p {
-  color: #b0b3b8;
-  margin: 20px 0 10px;
-  max-width: 400px;
-  text-align: justify;
-}
-
-footer .container h4 {
-  margin-bottom: 50px;
-}
-
-footer .input {
-  display: flex;
-  gap: 10px;
-}
-
-footer input {
-  background-color: #fff;
-  padding: 15px;
-  flex: 1;
-  border: none;
-  border-radius: 5px 0 0 5px;
-  outline: none;
-}
-
-footer button {
-  padding: 15px;
-  border: none;
-  background-color: #2756ae;
-  color: white;
-  font-weight: 500;
-  border-radius: 0 5px 5px 0;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-footer button:hover {
-  background-color: #193a8e;
-}
-
-footer h3 {
-  font-weight: 500;
-  padding-left: 40px;
-  margin-bottom: 20px;
-}
-
-footer ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  padding-left: 40px;
-}
-
-footer ul li {
-  color: #e0e0e0;
-  margin-bottom: 10px;
-}
-
-.legal {
+/* Footer container */
+.footer {
+  background-color: #333; /* Dark background color */
+  color: #fff;  /* White text color */
+  padding: 40px 20px;
   text-align: center;
-  padding: 20px 10px;
-  font-size: 14px;
-  background: #1d2636;
-  color: rgba(255, 255, 255, 0.5);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-@media screen and (max-width: 800px) {
-  .footerContact h1 {
-    font-size: 32px;
-  }
+/* Content inside the footer */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-@media screen and (max-width: 500px) {
-  footer .container {
-    grid-template-columns: 1fr;
+/* Logo section */
+.logo-section {
+  display: flex;
+  margin-left: auto; /* This will push the logo and address section to the right */
+  margin-right: 0;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.logo {
+  margin-left: 40%;
+}
+
+.logo img {
+  max-width: 150px; /* Logo size */
+}
+
+.address {
+  margin-top: 15px;
+  font-size: 16px;
+
+  margin-left: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.address p {
+  margin: 5px 0;
+  display: flex;
+  align-items: center; /* Align icons and text */
+  word-wrap: break-word; /* Allow long text to wrap */
+  max-width: 300px; /* Prevent text from overflowing */
+  overflow-wrap: break-word; /* Ensure long words wrap */
+}
+
+.address p svg {
+  margin-right: 10px; /* Space between icon and text */
+  flex-shrink: 0; /* Prevent icon from shrinking */
+}
+
+/* Quick Links */
+.quick-links,
+.follow-us {
+  flex: 1 1 200px; /* Makes these sections flexible and allows them to wrap */
+  padding: 5px;
+}
+
+.quick-links h4,
+.follow-us h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+/* Links styling */
+.quick-links ul,
+.follow-us ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.quick-links ul li,
+.follow-us ul li {
+  margin: 5px 0;
+}
+
+.quick-links a,
+.follow-us a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.quick-links a:hover,
+.follow-us a:hover {
+  color: #ff5733; /* Hover color */
+}
+
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column; /* Stack the sections vertically on smaller screens */
+    align-items: center;
   }
 
-  .footerContact h1 {
-    font-size: 28px;
+  .footer-content > div {
+    margin-bottom: 20px;
   }
 
-  footer input {
-    padding: 10px;
-  }
-
-  footer button {
-    padding: 10px;
-  }
-
-  .legal {
-    font-size: 12px;
+  .logo-section {
+    
+    align-items: center;
   }
 }

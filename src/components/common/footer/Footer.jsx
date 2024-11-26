@@ -1,55 +1,53 @@
-import React from "react";
-import { footer } from "../../data/Data";
-import "./footer.css";
+import React from 'react';
+import './footer.css';  // Assuming your CSS file is named Footer.css
+import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from 'react-icons/fa'; // For email, phone, and location icons
 
 const Footer = () => {
   return (
-    <>
-      <section className="footerContact">
-        <div className="container">
-          <div className="send flex">
-            <div className="text">
-              <h1>Do You Have Questions?</h1>
-              <p>We’re here to support all your branding needs.</p>
-            </div>
-            {/* <button className="btn5">Contact Us Today</button> */}
+    <footer className="footer">
+      <div className="footer-content">
+        {/* Logo Section */}
+        <div className="logo-section">
+          <div className="logo">
+            <img src="../images/logo5.jpg" alt="Company Logo" className="logo-image" />
+          </div>
+          <div className="address">
+            <p><FaMapMarkerAlt />  Hyderabad, India</p>
+          
+            <p><FaEnvelope />admin@aspiresfs.com </p>
+            <p><FaPhoneAlt /> +91 9030415566</p>
           </div>
         </div>
-      </section>
 
-      <footer>
-        <div className="container">
-          <div className="box">
-            {/* <div className="logo"> */}
-              {/* <img src="../images/logo3.png" alt="Logo" /> */}
-              <h1>Do You Need Help With Anything</h1>
-              <p>Write to us at.</p> 
-              <h4>premdigitalsignage.com</h4>
-              <div className="input">
-                <input type="text" placeholder="Email Address" />
-                <button>Subscribe</button>
-              </div>
-            {/* </div> */}
-          </div>
-
-          {footer.map((val, index) => (
-            <div className="box" key={index}>
-              <h3>{val.title}</h3>
-              <ul>
-                {val.text.map((item, idx) => (
-                  <a href={item.link}><li key={idx}>{item.list}</li></a>
-                ))}
-              </ul>
-            </div>
-          ))}
+        {/* Quick Links */}
+        <div className="quick-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
         </div>
-      </footer>
+        
 
-      <div className="legal">
-        <span>© 2024 PremDigitals.</span>
+        {/* Follow Us */}
+        <div className="follow-us">
+          <h4>Follow Us</h4>
+          <ul>
+            <li><a href="https://www.facebook.com">Facebook</a></li>
+            <li><a href="https://www.twitter.com">Twitter</a></li>
+            <li><a href="https://www.linkedin.com">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com">Instagram</a></li>
+          </ul>
+        </div>
+        
       </div>
-    </>
+      <div className="social-handle">
+    <p>@aspireprotectionservices</p>
+  </div>
+    </footer>
   );
-};
+}
 
 export default Footer;

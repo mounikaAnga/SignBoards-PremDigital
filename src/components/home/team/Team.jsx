@@ -6,43 +6,43 @@ import "./team.css"
 const Team = () => {
   return (
     <>
-      <section className='team background'>
-        <div className='container'>
-          <Heading title='Our Clients' subtitle='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.' />
-
-          <div className='content mtop grid3'>
-            {team.map((val, index) => (
-              <div className='box' key={index}>
-                {/* <button className='btn3'>{val.list} Listings</button> */}
-                <div className='details'>
-                  <div className='img'>
-                    <img src={val.cover} alt='' />
-                    <i className='fa-solid fa-circle-check'></i>
-                  </div>
-                  <i className='fa fa-location-dot'></i>
-                  <label>{val.address}</label>
-                  <h4>{val.name}</h4>
-
-                  <ul>
-                    {val.icon.map((icon, index) => (
-                      <li key={index}>{icon}</li>
-                    ))}
-                  </ul>
-                  <div className='button flex'>
-                    <button>
-                      <i className='fa fa-envelope'></i>
-                      Message
-                    </button>
-                    <button className='btn4'>
-                      <i className='fa fa-phone-alt'></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
+    <div className="why-us-section">
+    <div className="why-us-content">
+        <h1>Why Choose Aspire Services?</h1>
+        <ul>
+          <li>
+            <strong>Proven Expertise : </strong> With 13 years in the industry, Aspire Security is built on a foundation of extensive knowledge and experience, guaranteeing top-tier services in every area.
+          </li>
+          <li>
+            <strong>Tailored Solutions : </strong> Our services are fully customized to meet the unique needs of each client, whether you’re seeking security, facilities management, or property management.
+          </li>
+          <li>
+            <strong>Highly Trained Team : </strong> Our personnel undergo rigorous training and are fully licensed, providing professional, reliable service that meets the highest standards.
+          </li>
+          <li>
+            <strong>24/7 Support and Monitoring : </strong> We offer around-the-clock security and support services, ensuring continuous protection and prompt responses when you need them most.
+          </li>
+        </ul>
+      </div>
+    <div className="why-us-container">
+      <div className="circle-container">
+        <div className="center-text">
+         
         </div>
-      </section>
+
+        <div className="circle">Commitment</div>
+        <div className="circle">Quality</div>
+        <div className="circle">Potential</div>
+        <div className="circle">Performance</div>
+        <div className="circle">Budget</div>
+        <div className="circle">Time Bound</div>
+        <div className="circle " style={{ backgroundColor: '#fff', color: '#ff5733' }}>WHY US</div>
+      </div>
+    </div>
+
+    </div>
+      
+  
     </>
   )
 }

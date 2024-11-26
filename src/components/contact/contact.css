@@ -1,44 +1,101 @@
-.contact form div {
+/* General Styles */
+.body{
+  margin-top: 0%;
+}
+.contact1 {
+  margin-top: auto;
+  padding: 20px 0;
+  background-color: #f8f9fa;
+}
+
+.contact1 .container1 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.contact1 h2,
+.contact1 h3 {
+  margin-bottom: 20px;
+}
+
+.contact1 h4 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.contact1 p,
+.contact1 a {
+  font-size: 1rem;
+  color: #555;
+}
+
+.contact1 a {
+  text-decoration: none;
+}
+
+.contact1 a:hover {
+  color: #d9534f;
+}
+
+.contact1 .address1, .contact1 .call-us, .contact1 .email {
   display: flex;
+  align-items: center;
+  margin-bottom: 0px;
 }
-.contact textarea {
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  width: 100%;
-  border-radius: 5px;
-  margin-bottom: 20px;
-}
-.contact input {
-  margin-bottom: 20px;
+
+.contact1 .address1 i, .contact1 .call-us i, .contact1 .email i {
   margin-right: 10px;
 }
-.contact form {
+
+/* Form Styling */
+.contact1 form {
   padding: 30px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
-.address{
-  margin-top:20px;
+
+.contact1 form div {
+  display: flex;
+  gap: 20px;
+}
+
+.contact1 input,
+.contact1 textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
 }
-.container h3{
-  margin-top:30px;
-  margin-bottom:10px;
-  
+
+.contact1 textarea {
+  resize: vertical;
 }
-.container a{
-  color:blue;
-  margin-top:30px;
-margin-bottom:30px;}
-.container a:hover{
-  color:red;
+
+.contact1 button {
+  padding: 12px 30px;
+  background-color: #2756ae;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
+
+.contact1 button:hover {
+  background-color: #2186d0;
+}
+
+/* Media Queries */
 @media screen and (max-width: 768px) {
-  .contact h4 {
-    width: 100%;
-    margin-bottom: 30px;
-  }
-  .contact form div {
+  .contact1 form div {
     flex-direction: column;
   }
-  .contact input {
+
+  .contact1 input,
+  .contact1 textarea {
     width: 100%;
   }
 }

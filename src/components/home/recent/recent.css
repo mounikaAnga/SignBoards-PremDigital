@@ -1,3 +1,90 @@
+.three-boxes {
+  padding: 40px 20px;
+  background-color: #f9f9f9; /* Optional background color for the section */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px; /* Space between boxes */
+  flex-wrap: wrap; /* Wrap boxes on smaller screens */
+}
+
+.box {
+  flex: 1; /* All boxes take equal width */
+  min-width: 300px; /* Minimum width for smaller screens */
+  max-width: 350px; /* Limit maximum width */
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.box-image {
+  width: 100%;  /* Set the width to 100% of the parent container */
+  max-width: 100px; /* Maximum width */
+  height: auto;  /* Height adjusts to maintain aspect ratio */
+  object-fit: contain; /* Ensures the image is fully visible */
+  border-radius: 8px; /* Optional: Adds rounded corners */
+}
+
+.box-heading {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.box-content {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .container {
+    justify-content: center; /* Center boxes */
+  }
+
+  .box {
+    max-width: 90%; /* Take more space on smaller screens */
+  }
+}
+
+.recent {
+  background-color: #f9f9f9; /* Optional background */
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left; /* Align content to the left */
+}
+
+.heading {
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+.recent-image-container {
+  display: flex;
+  justify-content: flex-start; /* Align the image to the left */
+}
+
+.recent-image {
+  width: 900px; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional: rounded corners */
+  margin-top: 20px; /* Space between heading and image */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .recent-image {
+    width: 90%; /* Adjust width for smaller screens */
+    margin: 10px auto; /* Center the image */
+  }
+}
+
 .recent .text {
   padding: 30px;
 }

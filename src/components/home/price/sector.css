@@ -1,10 +1,31 @@
-.price {
-  text-align: center;
+
+.price .content .box h3 {
+  font-size: 22px;
+  margin: 10px; 
+  text-align: left; 
+  word-wrap: break-word; 
+  white-space: normal; 
 }
+
+.price ul li p {
+  margin: 0;
+  text-align: left; 
+}
+
 .price .content .box {
-  width: 31.5%;
-  padding: 30px;
+  width: 80%;
+  padding: 10px;
+  min-height: 300px;
+  margin-bottom: 30px;
   border-radius: 10px;
+  flex-direction: column; 
+  justify-content: flex-start;
+}
+.price .content {
+  display: flex;
+  gap: 100px; /* Add space between the cards horizontally */
+  flex-wrap: wrap; /* Ensure cards wrap if there isn't enough space */
+  justify-content: center; /* Center align cards in the container */
 }
 .price button {
   margin-bottom: 20px;
@@ -17,7 +38,7 @@
   font-size: 22px;
 }
 .price h1 {
-  font-size: 60px;
+  font-size: 40px;
 }
 .price h1 span {
   font-size: 30px;
@@ -38,9 +59,7 @@
   margin-right: 20px;
 }
 
-.price .btn5 {
-  width: 100%;
-}
+
 @media screen and (max-width: 800px) {
   .price .content {
     flex-direction: column;

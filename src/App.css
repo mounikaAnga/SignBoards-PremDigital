@@ -24,11 +24,12 @@ a {
 }
 ul {
   list-style-type: none;
+  color: red;
 }
 button {
   border-radius: 5px;
   padding: 17px 30px;
-  background:#2756ae;
+  background:red;
   border: none;
   color: #fff;
   cursor: pointer;
@@ -43,13 +44,14 @@ button i {
   margin: auto;
 }
 .heading h1 {
-  color: #2d3954;
+  color: #d41e1e;
   font-weight: 600;
   text-transform: capitalize;
   font-size: 35px;
 }
 .heading p {
-  color: #72809d;
+  color: #4b4645;
+  font-size: smaller;
 }
 textarea,
 input {
@@ -69,7 +71,7 @@ input {
   grid-gap: 30px;
 }
 label {
-  color: #2d3954;
+  color: red;
   font-size: 14px;
 }
 .mtop {

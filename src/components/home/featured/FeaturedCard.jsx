@@ -4,18 +4,22 @@ import { featured } from "../../data/Data"
 const FeaturedCard = () => {
   
   return (
-    <>
-      <div className='content grid3 mtop'>
-        {featured.map((items, index) => (
-          <div className='box' key={index}>
-            <img src={items.cover} alt='' />
-            <h4>{items.name}</h4>
-            <label>{items.total}</label>
-          </div>
-        ))}
-      </div>
-    </>
-  )
+    <div className="image-text-container">
+      {featured.map((item, index) => (
+        <div
+          className={`image-text-row ${index % 2 === 0 ? "left" : "right"}`}
+          key={index}
+        >
+          <img src={item.cover} alt={`service`} className="image" />
+          <div className="text-content">
+    <h2 className="heading">{item.heading}</h2>
+    <p className="text">{item.text}</p>
+  </div>
+        </div>
+      ))}
+    </div>
+  );
+  
 }
 
 export default FeaturedCard
